@@ -1,0 +1,12 @@
+﻿@model BlockExtractor.Web.Controllers.SiteUrlViewModel
+
+@{
+    ViewBag.Title = "Start page";
+}
+
+<h2>Start page</h2>
+
+@using(Html.BeginForm("Index", "Home", FormMethod.Post)){
+    @Html.TextBoxFor(model => model.Url);
+    <input type="submit" value="GO"/>
+}
