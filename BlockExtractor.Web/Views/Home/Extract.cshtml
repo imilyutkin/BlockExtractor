@@ -1,7 +1,7 @@
-﻿@model BlockExtractor.Web.Controllers.SiteUrlViewModel
+﻿@model HtmlString
 
 @{
     ViewBag.Title = "Extract";
 }
 
-<h2>@Model.Url</h2>
+@Html.Raw(Model)
